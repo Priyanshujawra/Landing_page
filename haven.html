@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: black;
+      }
+
+      .navbar {
+        background-color: black;
+        padding: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar .aa {
+        float: left;
+        margin: 0.5rem;
+        font-weight: 600;
+        color: #fcc02a;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      #home {
+        font-size: 35px;
+        color: #fcc02a;
+        text-decoration: none;
+
+        font-family: "Bree Serif", serif;
+        font-family: "Great Vibes", cursive;
+      }
+      .navbar .aa:hover {
+        background-color: #f8d53cea;
+        color: black;
+      }
+
+      .navbar a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .navbar .btn {
+        padding: 20px 35px;
+        background-color: #fcc02a;
+        font-size: 1rem;
+        font-weight: 700;
+        color: black;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .navbar .btn:hover {
+        background-color: #d32f2f;
+        color: white;
+      }
+      .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        color: #fcc02a;
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        border: 2px solid;
+      }
+      @media screen and (max-width: 600px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .nav_list_item {
+          width: 100%;
+        }
+        .button_list {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+        .logo_div {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        .navbar .btn {
+          width: 70%;
+          text-align: center;
+          display: block;
+        }
+
+        .navbar .aa {
+          display: block;
+          width: 100%;
+          text-align: left;
+          box-sizing: border-box;
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+
+        .navbar .menu-items {
+          display: none;
+        }
+        .navbar .menu-items2 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo_div">
+        <a href="#home" id="home">Heaven palate</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      </div>
+      <div class="nav_list_item menu-items" id="myDiv">
+        <a href="#news" class="aa">Restaurant Menu</a>
+        <a href="#contact" class="aa">About Us</a>
+        <a href="#about" class="aa">Find Us</a>
+      </div>
+      <div class="button_list menu-items2" id="myDiv2">
+        <button class="btn">Reserve Table</button>
+      </div>
+    </nav>
+
+    <section>
+      <div class="full_lan_page">
+        <div class="first_side"></div>
+        <div class="second_side">
+          <div class="left_images">
+            <div class="imag1">
+              <img
+                src="images_front_p\a party dying t 941e8e7d-8ee2-4582-931e-0bcdf7a32a58.png"
+                alt=""
+              />
+            </div>
+            <div class="imag1">
+              <img
+                src="images_front_p\kitchen room  m 44afaae0-19cb-4ba7-ad2c-7de14c8ed8ce.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="right_image">
+            <img
+              src="images_front_p\hotel chef only 6653e720-0a2c-4e3f-be19-d0273c0046c5.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="upper_side">
+          <div><h1>A haven for discerning palates</h1></div>
+          <div>
+            <div>
+              <button class="button_reservation">
+                Make Reservation
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 256 256"
+                  focusable="false"
+                  color='var(--token-9bb48178-1f06-4786-b0ca-9e3ce41ec0a2, rgb(245, 200, 79)) /* {"name":"CTA yellow"} */'
+                  style="
+                    user-select: none;
+                    width: 20%;
+                    height: 100%;
+                    display: inline-block;
+                    fill: var(
+                      --token-9bb48178-1f06-4786-b0ca-9e3ce41ec0a2,
+                      rgb(245, 200, 79)
+                    );
+                    color: var(
+                      --token-9bb48178-1f06-4786-b0ca-9e3ce41ec0a2,
+                      rgb(245, 200, 79)
+                    );
+                    flex-shrink: 0;
+                  "
+                >
+                  <g
+                    color='var(--token-9bb48178-1f06-4786-b0ca-9e3ce41ec0a2, rgb(245, 200, 79)) /* {"name":"CTA yellow"} */'
+                    weight="regular"
+                  >
+                    <path
+                      d="M72,88V40a8,8,0,0,1,16,0V88a8,8,0,0,1-16,0ZM216,40V224a8,8,0,0,1-16,0V176H152a8,8,0,0,1-8-8,268.75,268.75,0,0,1,7.22-56.88c9.78-40.49,28.32-67.63,53.63-78.47A8,8,0,0,1,216,40ZM200,53.9c-32.17,24.57-38.47,84.42-39.7,106.1H200ZM119.89,38.69a8,8,0,1,0-15.78,2.63L112,88.63a32,32,0,0,1-64,0l7.88-47.31a8,8,0,1,0-15.78-2.63l-8,48A8.17,8.17,0,0,0,32,88a48.07,48.07,0,0,0,40,47.32V224a8,8,0,0,0,16,0V135.32A48.07,48.07,0,0,0,128,88a8.17,8.17,0,0,0-.11-1.31Z"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+
+            <div class="set_text">
+              <h2>We served over <span>5000 + 😀 </span>Happy Customers</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function toggleMenu() {
+      var myDiv = document.getElementById("myDiv");
+      myDiv.classList.toggle("menu-items");
+      var myDiv2 = document.getElementById("myDiv2");
+      myDiv2.classList.toggle("menu-items2");
+    }
+  </script>
+</html>
